@@ -38,7 +38,6 @@
         { "name": "Terrain"            , "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer" }
     ],
     "pluginOrder": [
-        "projectSelector",
         "boston",
         "bridgeport",
         "natural_defenses",
@@ -65,11 +64,6 @@
             "title": "Resilient Cities",
             "description": "A prototype mapping application for assessing flood and climate projections, and identifying natural solutions that reduce risk",
             "plugins": [
-                {
-                    "title": "<img src='img/cities.png' hspace=10>Resilient Cities projects",
-                    "description": "Comparison green infrastrucutre across cities",
-                    "pluginName": "projectSelector"
-                },
                 {
                     "title": "<img src='img/boston.png' hspace=10>Boston",
                     "description": "Climate Ready Boston",
