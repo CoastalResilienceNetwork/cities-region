@@ -65,13 +65,18 @@
             "description": "A prototype mapping application for assessing flood and climate projections, and identifying natural solutions that reduce risk",
             "plugins": [
                 {
-                    "title": "<img src='img/boston.png' hspace=10>Boston",
+                    "title": "<img src='img/boston.png' hspace=10>Boston, USA",
                     "description": "Climate Ready Boston",
                     "pluginName": "boston"
                 },
                 {
-                    "title": "<img src='img/bridgeport.png' hspace=10>Bridgeport",
+                    "title": "<img src='img/bridgeport.png' hspace=10>Bridgeport, USA",
                     "description": "Greening the Edge",
+                    "pluginName": "bridgeport"
+                },
+                {
+                    "title": "<img src='img/semarang.png' hspace=10>Semarang, Indonesia",
+                    "description": "The goal of <a href='http://preparecenter.org/activities/coalition-building-coastal-cities' target='_blank'>Resilient Coastal Cities is to enhance local collaboration and problem solving to support effective climate change adaption in Southeast Asia.",
                     "pluginName": "bridgeport"
                 },
                 {

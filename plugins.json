@@ -13,6 +13,10 @@
             "name": "bridgeport"
         },
         {
+            "repo": "regional-planning",
+            "name": "semarang"
+        },
+        {
             "repo": "natural_defenses",
             "name": "natural_defenses"
         }
