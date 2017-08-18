@@ -11,17 +11,17 @@
         },
         "includeLayers": [
             {
-                "name": "Infrastructure",
+                "name": "InfrastructureSM",
                 "displayName": "Infrastructure",
                  "includeAllLayers": true
             },
             {
-                "name": "Socio-economic",
+                "name": "Socio-economicSM",
                 "displayName": "Socio-economic",
                 "includeAllLayers": true
             },
             {
-                "name": "Ecological",
+                "name": "EcologicalSM",
                 "displayName": "Ecological",
                 "includeAllLayers": true
             },
