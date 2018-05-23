@@ -1,5 +1,5 @@
 {
-    "googleAnalyticsPropertyId": "7401895-43",
+    "googleAnalyticsPropertyId": "7401895-16",
     "googleUrlShortenerApiKey": "AIzaSyDO_xBd3griGKuhlYBvv7jVN4Mt58Gl4iw",
     "titleMain": { "text": "Cities", "url": "" },
     "titleDetail": { "text": "Building Resilient Communities", "url": "" },
@@ -38,16 +38,21 @@
         { "name": "Terrain"            , "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer" }
     ],
     "pluginOrder": [
+        "boston",
+        "bridgeport",
+        "semarang",
         "natural_defenses",
         "regional-planning",
-        "zoom_to",
+		"zoom_to",
         "measure",
         "legend_display",
-        "full_extent",
-        "subregion_toggle"
+        "full_extent"
+    
     ],
     "print": {
-        "printServerUrl": "http://services.coastalresilience.org/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task", "customPrintTemplatePrefix": "Letter ANSI A GeositeFramework"  
+       "printServerUrl": "http://services.coastalresilience.org:6080/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
+       "customPrintTemplatePrefix": "Letter ANSI A GeositeFramework",
+       "headerLogoPath": "http://maps.coastalresilience.org/network/img/TNCLogoPrimary_RGB2.jpg"
     },
     "colors": {
        "primary": "#C95D28",
@@ -55,11 +60,26 @@
        "tertiary": "#333333",
        "active": "#0096D6"
     },
-    "identifyBlacklist": ["OBJECTID", "OBJECTID_1", "SHAPE", "Shape", "shape_Length", "shape_Area", "NumScen"],
+   "identifyBlacklist": ["OBJECTID", "OBJECTID_1", "SHAPE", "Shape", "shape_Length", "shape_Area", "NumScen"],
     "launchpad": {
             "title": "Resilient Cities",
             "description": "A prototype mapping application for assessing flood and climate projections, and identifying natural solutions that reduce risk",
             "plugins": [
+                {
+                    "title": "<img src='img/boston.png' hspace=10>Boston, USA",
+                    "description": "Climate Ready Boston",
+                    "pluginName": "boston"
+                },
+                {
+                    "title": "<img src='img/bridgeport.png' hspace=10>Bridgeport, USA",
+                    "description": "Greening the Edge",
+                    "pluginName": "bridgeport"
+                },
+                {
+                    "title": "<img src='img/semarang.png' hspace=10>Semarang, Indonesia",
+                    "description": "The goal of <a href='http://preparecenter.org/activities/coalition-building-coastal-cities' target='_blank'>Resilient Coastal Cities</a> is to enhance local collaboration and problem solving to support effective climate change adaption in Southeast Asia.",
+                    "pluginName": "semarang"
+                },
                 {
                     "title": "<img src='img/natural_defenses.png' hspace=10>Natural Defense projects",
                     "description": "Discover green infrastructure projects around the world",
@@ -68,9 +88,9 @@
             ],
             "scenarios": [
                 {
-                    "title": "<img src='img/regional_planning.png' hspace=10>Global and Regional Data",
-                    "description": "Preliminary data to examine, including Coasts at Risk",
-                    "saveCode": "eyJzY3JlZW4iOsSAc3BsaXRTxIPEhcSHOmZhbHNlLMSBeW5jTWFwc8SIxJXEl2V9xJptxKAwxIjEgGV4dMSGdMSsInR5cGXEiCLErsSwbsSyxJp4bWnEky0xNTQ0ODg0MC42NjA3Njk0MzTEmnnFgcWDNDc4NjM5Ni41MDA1NzA5ODHEv8SpeMSIMTEwODUyMDPFojnFpDI2NDU1xZfFrcWvxbA0McWzNy7FtTHFjzI5xbTEmsSLYXRpxJZSZWZlxITEncS4xIkid2tpZMWvMDLFsTDEmmzGkWVzdFfGn8ahOjPGhsSnImNhY2jGm8SAX3BhcnTEojpbxK3Er8SxxLPEtcS3xLnEu8eFxazFgsSIxYTFhsWIxYrFjMWOxZDFksWUxZYixZjHjTotxZvFncWfxaHFo8WlxafFqcWrIsWAYcWuOsWwxbLFtMW2xbjFusW8xb7GgMepxoIxxoTGhsaIMMaKxqPGjTLGj8a8xpLGlMaWxpjEhmPGucadxq7GosakxaTGp8apxqvGrcagxIjGscWmfcazZnJhbWVJZMeAWzBdfciixrPEmGxlY8SwZEJhxJjEqXBJbmTErsSIMMazxrxuZcSrxpzIuGVOdW1ixpjItcaPdMapT2ZQbHVnxYLHgMSKZcinyKllZMmKyYzHmyLEjMmXbnMvxITJjW9uxJYtxIxhbm7FgmcixJrJmsmNyZzEs8mtyY7JnmXJoMmibMmkxqjJp8mpxLPGqHnGmMmPxrR1csaZdMaVybXEiG51bGzEmmZpbMSwclTEu8S5yavEgcmRyKjIqkxhyb5yyJ8iQ2/Irca/IEAgUmlzaywgQm91yLLGvWnGqiAmIEhhYsSOxpHJncqhyqNzIMaRyqfKqWsgKMaJNCkvyr7Gq8uAy4LKqMqqIMixyLPFrl3EmsSuyLjIs2TKm8qdyp/LjMqkyqbLkMqryq3Kr8qxcsqzy4DKtsq4yrrJhsa/y4vKosuNy4F0y4PLkcuHx7vLicqWy5/LgMuhy4TKrMquyrBkyrLKtMuqyrnKu8a/IsuWIsm9xphPxrxjxI55xIhbzInFgmZvyq54y5zGmMidyojKimzGs2TImXfGlXBvxr7Es8a9ZWHJiMixypHGqsSyOsqJyovIlsy0fQ=="
+                    "title": "<img src='img/regional_planning.png' hspace=10>Martha's Vineyard",
+                    "description": "Preliminary data to examine",
+                    "saveCode": "eyJzY3JlZW4iOsSAc3BsaXRTxIPEhcSHOm51bGwsxIF5bmNNYXBzxIhmYWxzZX3EmW3EnzDEiMSAZXh0xIZ0xK0idHlwZcSIIsSvxLFuxLPEmXhtacSTLTc4ODM4NDkuMzI2MsWONDA0xJl5xYLEkzUwNTc1OcWMMzY1MsWPMzkyxYDEqnjEiMWFxYrFpsWLLjE5NzQ2xZ05NsWWxarEiMWaxYgxMsWgxY7FtsWhxZs1xJnEi2F0acSkUmVmZcSExJzEucSJIndraWTEiDEwMsabMMSZbMaJZXN0V8aXxpk6xYnFnH3EqMSBZWxlY8SxZEJhxKbEqnBJbmTEr8SIMMatcGFuZcSsxpTHgceDTnVtYsaQxr7Gh3TGok9mUGx1Z8WDxKHGlMSmxrDGsmVkx5THlsWDxLrEjMehbnMvxITHl29uxKQtxIzHgm7Fg2cixJnHpMeXx6bEtMe2x5jHqGXHqsesbMeuxqFux7Fux7PGlMahecaQx5nEgGN1csaRdMaNx77EiMSVxJfEmWZpbMSxclTEvMS6x7TGrsecxrNMYciJcseZW13EmcSvx4fGvGTIpMimyKgixJ5ydGhhJ3MgVsWDZXlhcmQsIE1ByKDItMi2yLjIusi8x4PIv8mByYPJhS9Bc8SmyZTHnsi7xKR1xqMiyKoiyIjGkE/HgWPEjnnEiMipxJnFg2ZvQm94yLDGkEnGqMiVbMatZHJhd8aNcG/ItcS0yYBlYceSxrrIm8ajxLPElMSWybTGrMqK"
                 }
             ],
             "partners": [
@@ -82,4 +102,3 @@
         ]
     }
 }
-
