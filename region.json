@@ -54,8 +54,10 @@
         "printServerUrl": "http://services.coastalresilience.org/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task", "customPrintTemplatePrefix": "Letter ANSI A GeositeFramework"  
     },
     "colors": {
-       "primary": "#26648E",
-       "secondary": "#26648E"
+       "primary": "#C95D28",
+       "secondary": "#E6B12B",
+       "tertiary": "#333333",
+       "active": "#0096D6"
     },
     "identifyBlacklist": ["OBJECTID", "OBJECTID_1", "SHAPE", "Shape", "shape_Length", "shape_Area", "NumScen"],
     "launchpad": {
