@@ -40,7 +40,6 @@
     "pluginOrder": [
         "boston",
         "bridgeport",
-        "semarang",
         "natural_defenses",
         "regional-planning",
 		"zoom_to",
@@ -76,11 +75,6 @@
                     "pluginName": "bridgeport"
                 },
                 {
-                    "title": "<img src='img/semarang.png' hspace=10>Semarang, Indonesia",
-                    "description": "The goal of <a href='http://preparecenter.org/activities/coalition-building-coastal-cities' target='_blank'>Resilient Coastal Cities</a> is to enhance local collaboration and problem solving to support effective climate change adaption in Southeast Asia.",
-                    "pluginName": "semarang"
-                },
-                {
                     "title": "<img src='img/natural_defenses.png' hspace=10>Natural Defense projects",
                     "description": "Discover green infrastructure projects around the world",
                     "pluginName": "natural_defenses"
@@ -88,9 +82,9 @@
             ],
             "scenarios": [
                 {
-                    "title": "<img src='img/regional_planning.png' hspace=10>Martha's Vineyard",
+                    "title": "<img src='img/regional_planning.png' hspace=10>Global & Regional Data",
                     "description": "Preliminary data to examine",
-                    "saveCode": "eyJzY3JlZW4iOsSAc3BsaXRTxIPEhcSHOm51bGwsxIF5bmNNYXBzxIhmYWxzZX3EmW3EnzDEiMSAZXh0xIZ0xK0idHlwZcSIIsSvxLFuxLPEmXhtacSTLTc4ODM4NDkuMzI2MsWONDA0xJl5xYLEkzUwNTc1OcWMMzY1MsWPMzkyxYDEqnjEiMWFxYrFpsWLLjE5NzQ2xZ05NsWWxarEiMWaxYgxMsWgxY7FtsWhxZs1xJnEi2F0acSkUmVmZcSExJzEucSJIndraWTEiDEwMsabMMSZbMaJZXN0V8aXxpk6xYnFnH3EqMSBZWxlY8SxZEJhxKbEqnBJbmTEr8SIMMatcGFuZcSsxpTHgceDTnVtYsaQxr7Gh3TGok9mUGx1Z8WDxKHGlMSmxrDGsmVkx5THlsWDxLrEjMehbnMvxITHl29uxKQtxIzHgm7Fg2cixJnHpMeXx6bEtMe2x5jHqGXHqsesbMeuxqFux7Fux7PGlMahecaQx5nEgGN1csaRdMaNx77EiMSVxJfEmWZpbMSxclTEvMS6x7TGrsecxrNMYciJcseZW13EmcSvx4fGvGTIpMimyKgixJ5ydGhhJ3MgVsWDZXlhcmQsIE1ByKDItMi2yLjIusi8x4PIv8mByYPJhS9Bc8SmyZTHnsi7xKR1xqMiyKoiyIjGkE/HgWPEjnnEiMipxJnFg2ZvQm94yLDGkEnGqMiVbMatZHJhd8aNcG/ItcS0yYBlYceSxrrIm8ajxLPElMSWybTGrMqK"
+                    "saveCode": "eyJzY3JlZW4iOsSAc3BsaXRTxIPEhcSHOmZhbHNlLMSBeW5jTWFwc8SIxJXEl2V9xJptxKAwxIjEgGV4dMSGdMSsInR5cGXEiCLErsSwbsSyxJp4bWnEky0xMjI5ODTFhS4xMMWHNsWJNDjEmnnFgcWDNzUwNjMzMS43McWZNjk5xZDEv8SpeMSIxYXFh8WJxYvFjcWPxZHFkyLFlWHFqTrFiTIxOcW5LsWIxaAwM8WlNcSaxIthdGnEllJlZmXEhMSdxLjEiSJ3a2lkxarFjsWNMMSabMaGZXN0V8aUxpY6Mzg1N8SnImNhY2jGkMSAX3BhcnTEojpbxK3Er8SxxLPEtcS3xLnEu8a7xafFgsSIxYTFhsWIxYoyxYzFjsWlxbHFlMWWx4TFmMWaxZzFnsWgxaLFpMWmIsWAxbXFqseGxa3HicWvx4w0xZLHjsebxbc0xbnFu8Wexb7FjcaBNsaDxIHGssaHxonGi8aNxIZjxq/GksaixpfFuTDGmiLGnMSwxp/GocaVxIjGpcanfcapZnJhbWVJZMa2WzBdfciUxqnEmGxlY8SwZEJhxJjEqXBJbmTErsSIMMapxrJuZcSrxpHIqmVOdW1ixo3Ip8aEdMadT2ZQbHVnxYLGtsSKZciZyJtlZMi8yL7HgzoixIzJiW5zL8SEyL9vbsSWLcSMYW5uxYJnIsSayY3Iv8mPxLPJoMmAyZFlyZPJlWzJl8acyZrJnMSzxpx5xo3JgcaqdXLGjnTGismoxIhudWxsxJpmaWzEsHJUxLvEucmexIHJg8iayJxMYcmxcsiRIkNvyJ/GtSBAIFJpc2ssIEJvdcikxrNpxp4gJiBIYWLEjsaGyZDKlMqWcyDGhsqaypxrICgyMDE0KS/KscafyrPKtcqbyp0gyKPIpcWpXcSaxK7IqsilZMqOypDKksuBypfKmcuFyp7KoMqiyqRyyqbKs8qpyqvKrci4xrXKicuUyrPLlsq3yp/KocqjZMqlyqfLn8qsyq7GtcuAypXLgsq0dMq2y4bKusq8yr4iy4vHv8qPxo1PxrJjxI55xIhby77FgmZvyqF4y5HGjciPybvJvWzGqWTIi3fGinBvxrTEs8azZWHIusijyoTGnsSyOsm8yb7IiMypfQ=="
                 }
             ],
             "partners": [
