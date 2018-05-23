@@ -3,6 +3,10 @@
 	{
       "repo": "regional-planning",
       "name": "regional-planning"
+    },
+    {
+       "repo": "natural_defenses",
+       "name": "natural_defenses"
     }    
   ]
 }
